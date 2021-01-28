@@ -12,7 +12,7 @@ function tellMe(speech) {
   const speechString = speech.trim().replace(/ /g, '%20');
   // VoiceRSS Speech Parameters
   VoiceRSS.speech({
-    key: '58bc94adba5a466888bb92ccfc93ed84',
+    key: 'YOUR_API_KEY',
     src: speechString,
     hl: 'en-us',
     r: 0,
