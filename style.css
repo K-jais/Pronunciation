@@ -1,0 +1,85 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+.word-box {
+  border: 1px solid gray;
+  background: #bfbfbf;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background: #fff;
+  background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('./mudra.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  font-size:38px;
+  font-family: Courier, monospace;
+  margin:40px 30px;
+  font-weight: 600;
+}
+.single-word:hover {
+  color: white;
+  cursor: pointer;
+}
+.container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+.words {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.single-word {
+  text-align: center;
+  font-size: 1.3em;  
+  text-transform: capitalize;
+  padding: 2px;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: blue;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.butt{
+  display: flex;
+  justify-content: center;
+}
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  
+}
